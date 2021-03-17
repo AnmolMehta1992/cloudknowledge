@@ -1,4 +1,3 @@
-Docker file
 FROM centos:latest
 MAINTAINER anmolmehta.1992@gmail.com
 RUN yum install -y httpd \
@@ -9,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip kindle.zip
 RUN cp-rvf markups-kindle/*
 RUN rm -rf_MACOSX markups-kindle kindle.zip
-CMD[*/usr/sbin/httpd", "-D",  "FOREGROUND"]
+CMD [*/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
